@@ -1,0 +1,72 @@
+﻿body {
+    margin: auto;
+    padding:10px;
+    width: 100%;
+    background: gray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    background: aqua;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: black;
+    background: aqua;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    width: 20%;
+}
+
+    li a {
+        color: black;
+    }
+
+    li:hover, li:focus {
+        background: darkslategray;
+        color: white;
+        cursor: pointer;
+    }
+
+ul li ul {
+    background: aqua;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    width: 75%;
+}
+
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: .75;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
