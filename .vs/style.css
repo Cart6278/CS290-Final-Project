@@ -1,15 +1,24 @@
 ﻿body {
     margin: auto;
-    padding:10px;
-    width: 100%;
+    padding: 10px;
+    width: 95%;
     background: gray;
+
 }
 
+body, nav, div {
+    display: block;
+    padding: 10px;
+}
+body, div {
+    float: left;
+}
 
 a {
     text-decoration: none;
 }
 
+/*navigation*/
 nav {
     font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
@@ -70,3 +79,11 @@ ul li ul {
         width: 100%;
     }
 
+/*scrolling page section*/
+.scroll {
+    margin: 30px;
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: white;
+}
