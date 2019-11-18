@@ -78,6 +78,29 @@ ul li ul {
         clear: both;
         width: 100%;
     }
+/*slider*/
+
+.theSlide{
+    max-width:100%;
+    position: relative;
+    margin: auto;
+}
+.mainSlider{
+    display: none;
+}
+
+.prevButton, .nextButton {
+    cursor: pointer;
+    position:absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s ease-in;
+    user-select: none;
+}
 
 /*scrolling page section*/
 .scroll {
