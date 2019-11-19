@@ -1,18 +1,13 @@
-﻿body {
-    margin: auto;
-    padding: 10px;
-    width: 95%;
+﻿* {
+    box-sizing: border-box
+}
+
+body {
     background: gray;
-
+    margin: 0 auto;
+    font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body, nav, div {
-    display: block;
-    padding: 10px;
-}
-body, div {
-    float: left;
-}
 
 a {
     text-decoration: none;
@@ -20,8 +15,9 @@ a {
 
 /*navigation*/
 nav {
-    font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
+
+    width: 80%;
+    margin:0 auto;
     text-align: center;
 }
 
@@ -30,6 +26,7 @@ ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
+    z-index: 999;
 }
 
 li {
@@ -78,8 +75,19 @@ ul li ul {
         clear: both;
         width: 100%;
     }
-/*slider*/
 
+#welcome{
+        margin:auto;
+        z-index: 500;
+    }
+#welcome>h1 {
+    margin: auto;
+    font-size: 18rem;
+    color: #ffffff;
+    text-align: left;
+}
+/*slider*/
+/*
 .theSlide{
     max-width:100%;
     position: relative;
@@ -111,14 +119,31 @@ ul li ul {
     user-select: none;
 }
 
+
 #dots {
     text-align:center;
 }
 /*scrolling page section*/
 .scroll {
-    margin: 30px;
-    width: 500px;
+    margin: 1rem;
+    width: 450px;
     height: 300px;
     overflow-y: scroll;
     background-color: white;
+}
+
+.backDrop {
+    background-color: white;
+    width: 50%;
+    margin:0 auto;
+    padding: 2.5rem;
+}
+.photos{
+    margin:auto;
+    padding: 1rem;
+}
+
+form{
+    width:50%;
+    margin:auto;
 }
