@@ -89,9 +89,18 @@ ul li ul {
     display: none;
 }
 
+.slideFade{
+    animation-name: fade;
+    animation-duration: 2s;
+
+}
+.mainSlider>img{
+    width: 100%;
+}
+
 .prevButton, .nextButton {
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -102,6 +111,9 @@ ul li ul {
     user-select: none;
 }
 
+#dots {
+    text-align:center;
+}
 /*scrolling page section*/
 .scroll {
     margin: 30px;
