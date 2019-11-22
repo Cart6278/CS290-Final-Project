@@ -13,11 +13,10 @@ a {
     text-decoration: none;
 }
 
-/*navigation*/
+/*navigation
 nav {
-
     width: 80%;
-    margin:0 auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -75,17 +74,18 @@ ul li ul {
         clear: both;
         width: 100%;
     }
-
-#welcome{
-        margin:auto;
-        z-index: 500;
-    }
-#welcome>h1 {
+    */
+#welcome {
     margin: auto;
-    font-size: 18rem;
-    color: #ffffff;
-    text-align: left;
+    z-index: 500;
 }
+
+    #welcome > h1 {
+        margin: auto;
+        font-size: 18rem;
+        color: #ffffff;
+        text-align: left;
+    }
 /*slider*/
 /*
 .theSlide{
@@ -96,16 +96,13 @@ ul li ul {
 .mainSlider{
     display: none;
 }
-
 .slideFade{
     animation-name: fade;
     animation-duration: 2s;
-
 }
 .mainSlider>img{
     width: 100%;
 }
-
 .prevButton, .nextButton {
     cursor: pointer;
     position: absolute;
@@ -118,8 +115,6 @@ ul li ul {
     transition: 0.5s ease-in;
     user-select: none;
 }
-
-
 #dots {
     text-align:center;
 }
@@ -133,17 +128,34 @@ ul li ul {
 }
 
 .backDrop {
-    background-color: white;
-    width: 50%;
-    margin:0 auto;
+    background-color: #2a3030;
+    width: 1250px;
+    margin: 2rem auto;
     padding: 2.5rem;
-}
-.photos{
-    margin:auto;
-    padding: 1rem;
+    display: flex;
 }
 
-form{
-    width:50%;
-    margin:auto;
+.center, .photos {
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+.center{
+    background-color: #000;
+}
+
+.left {
+    flex: 0 0 50%;
+    padding: 1rem;
+}
+.right {
+    flex: 1;
+    padding: 1rem;
+
+}
+
+form {
+    width: 50%;
+    margin: auto;
 }
