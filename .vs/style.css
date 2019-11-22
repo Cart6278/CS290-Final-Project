@@ -87,7 +87,7 @@ ul li ul {
         text-align: left;
     }
 /*slider*/
-/*
+
 .theSlide{
     max-width:100%;
     position: relative;
@@ -96,27 +96,31 @@ ul li ul {
 .mainSlider{
     display: none;
 }
-.slideFade{
+.slideFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
-.mainSlider>img{
-    width: 100%;
+
+@-webkit-keyframes slideFade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
-.prevButton, .nextButton {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: cadetblue;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.5s ease-in;
-    user-select: none;
-}
-#dots {
-    text-align:center;
+
+@keyframes slideFade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 /*scrolling page section*/
 .scroll {
