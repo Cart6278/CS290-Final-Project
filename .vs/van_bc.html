@@ -3,22 +3,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="lightbox2-2.11.1/lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
     <title>Vancouver B.C.</title>
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
         <!--adapted from: https://css-tricks.com/solved-with-css-dropdown-menus/ -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav nav-fill mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-item nav-link active" href="about.html">About</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="photo.html">
+                    <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="photo.html">
                         Photography
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -27,7 +26,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="graphic_design.html">Graphic Design</a>
+                    <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="graphic_design.html">Graphic Design</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="projects_gd.html">Fun Projects</a>
                         <a class="dropdown-item" href="brochure_gd.html">Brochures</a>
@@ -37,24 +36,40 @@
         </div>
     </nav>
     <div class="backDrop">
-        <!-- Lightbox images adapted from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
         <div class="center">
             <h1 class="vanBlurb">Vancouver B.C.</h1>
             <p class="vanBlurb">
                 Back in the summer of 2012 I and a small group of students from Pacific University went on a trip to Vancouver British Columbia in Canada for a photography class. Below is a selection of photos from that trip.
             </p>
+            <!--Added Lightbox2 functionality-->
             <div class="photos">
-                <img src="https://live.staticflickr.com/4662/26533200028_a1c71c9d77.jpg" width="500" height="333" alt="VancouverBC_2012">
+                <a href="https://live.staticflickr.com/4662/26533200028_a1c71c9d77.jpg" width="500" height="333" alt="VancouverBC_2012" data-lightbox="image1"><img src="https://live.staticflickr.com/4662/26533200028_a1c71c9d77.jpg" width="500" height="333" alt="VancouverBC_2012"></a>
 
-                <img src="https://live.staticflickr.com/4651/26533201368_d7600bde1a.jpg" width="500" height="366" alt="VancouverBC_2012">
+                <a href="https://live.staticflickr.com/4651/26533201368_d7600bde1a.jpg" width="500" height="366" alt="VancouverBC_2012" data-lightbox="image2"><img src="https://live.staticflickr.com/4651/26533201368_d7600bde1a.jpg" width="500" height="366" alt="VancouverBC_2012"></a>
             </div>
-            
+
             <div class="photos">
-                <img src="https://live.staticflickr.com/4605/26533189898_af58598e80.jpg" width="500" height="333" alt="VancouverBC_2012">
+                <a href="https://live.staticflickr.com/4605/26533189898_af58598e80.jpg"  width="500" height="333" alt="VancouverBC_2012" data-lightbox="image3"><img src="https://live.staticflickr.com/4605/26533189898_af58598e80.jpg" width="500" height="333" alt="VancouverBC_2012"></a>
 
-                <img src="https://live.staticflickr.com/4659/38593165350_2882bcdf62.jpg" width="500" height="333" alt="MOA_3">
+               <a href="https://live.staticflickr.com/4659/38593165350_2882bcdf62.jpg" width="500" height="333" alt="MOA_3" data-lightbox="image4"><img src="https://live.staticflickr.com/4659/38593165350_2882bcdf62.jpg" width="500" height="333" alt="MOA_3"></a> 
             </div>
-         </div>
+        </div>
     </div>
+    <div class="footer">
+        <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
+
+            <ul class="navbar-nav nav-fill mr-auto">
+                <li><a class="navbar-brand" href="https://www.flickr.com/photos/150400063@N04/"><i class="fab fa-flickr"></i></a></li>
+                <li><a class="navbar-brand" href="https://twitter.com/ABritDaneYankee"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a class="navbar-brand" href="https://www.linkedin.com/in/kirsten-carter-3580314b/"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
