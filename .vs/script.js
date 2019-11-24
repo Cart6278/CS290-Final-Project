@@ -22,3 +22,23 @@ function initSlideShow(slideshow) {
 
     }, time);
 }
+
+//Adapted from Activity 5 - ended up not using due to difficulty getting POST to work correctly
+
+document.addEventListener('DOMContentLoaded', aButton);
+function aButton() {
+    document.getElementById('contactSubmit').addEventListener('click', function (event) {
+        // var apiKey="9b3dbc2d1985c6ee3339b389f4254b24";
+        var newReq = new XMLHttpRequest();
+        var enterInfo = { name: null, email:null};
+        enterInfo.name = document.getElementById("userName").value;
+        enterInfo.email = document.getElementById("userEmail").value;
+        newReq.open('POST', 'http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php'+enterInfo.name+','+enterInfo.email, false);
+        newReq.send(JSON.stringify(newReq.name));
+        newReq.send(JSON.stringify(newReq.email));
+
+        var response = JSON.parse(newReq.responseText);
+        console.log(response);
+        event.preventDefault();
+    });
+}

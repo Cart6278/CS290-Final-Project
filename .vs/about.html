@@ -4,20 +4,21 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/cf3c7fdfee.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <title>About</title>
 </head>
 <body>
 
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
         <!--adapted from: https://css-tricks.com/solved-with-css-dropdown-menus/ -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav nav-fill mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-item nav-link active" href="about.html">About</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="photo.html">
+                    <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="photo.html">
                         Photography
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -26,10 +27,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="graphic_design.html">Graphic Design</a>
+                    <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="graphic_design.html">Graphic Design</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="projects_gd.html">Fun Projects</a>
-                        <a class="dropdown-item" href="brochure_gd.html">Brochures</a>
                     </div>
                 </li>
             </ul>
@@ -49,28 +49,30 @@
                     Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Aliquet risus feugiat in ante metus dictum at tempor. Ultricies leo integer malesuada nunc vel risus. Congue eu consequat ac felis donec et odio. Lacinia at quis risus sed vulputate. Elementum eu facilisis sed odio morbi quis commodo. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Dolor sit amet consectetur adipiscing. Posuere urna nec tincidunt praesent semper feugiat. Pharetra sit amet aliquam id diam maecenas. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Nunc id cursus metus aliquam eleifend mi in nulla. Lacus laoreet non curabitur gravida arcu ac tortor. Ultrices dui sapien eget mi proin sed libero. Habitant morbi tristique senectus et netus et malesuada. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Dapibus ultrices in iaculis nunc. Quis vel eros donec ac. Massa vitae tortor condimentum lacinia quis vel eros donec. Lobortis feugiat vivamus at augue eget arcu.
                 </p>
             </div>
-            <div class="photos">
+            
+            <div id="aboutPhoto">
 
                 <img src="https://live.staticflickr.com/4616/38593232410_2e770d8607.jpg" width="483" height="500" alt="Granville_6">
 
             </div>
-            <br />
+            
             <div id="formContain">
-                <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+                <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
                     <fieldset>
                         <h2>Contact Me</h2>
                         <fieldset>
                             <label>
                                 Your Name:
-                                <input type="text" name="name_input" size="30" maxlength="100" />
+                                <input type="text" name="name_input" id="userName" size="30" maxlength="100" />
                             </label>
                         </fieldset>
                         <br />
                         <fieldset>
                             <label>
                                 Prefered Email:
-                                <input type="email" name="email_input" size="20" maxlength="100" />
+                                <input type="email" name="email_input" id="userEmail" size="40" maxlength="100" />
                             </label>
+                            <input type="submit" value="SUBMIT" />
                         </fieldset>
                         <br />
                     </fieldset>
@@ -80,19 +82,21 @@
         </div>
 
     </div>
+    <!--Bootstrap Footer-->
     <div class="footer">
-        <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
+         <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
 
-            <ul class="navbar-nav nav-fill mr-auto">
-                <li><a class="navbar-brand" href="https://www.flickr.com/photos/150400063@N04/"><i class="fab fa-flickr"></i></a></li>
-                <li><a class="navbar-brand" href="https://twitter.com/ABritDaneYankee"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a class="navbar-brand" href="https://www.linkedin.com/in/kirsten-carter-3580314b/"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+             <ul class="navbar-nav nav-fill mr-auto">
+                 <li><a class="navbar-brand" href="https://www.flickr.com/photos/150400063@N04/"><i class="fab fa-flickr"></i></a></li>
+                 <li><a class="navbar-brand" href="https://twitter.com/ABritDaneYankee"><i class="fab fa-twitter-square"></i></a></li>
+                 <li><a class="navbar-brand" href="https://www.linkedin.com/in/kirsten-carter-3580314b/"><i class="fab fa-linkedin"></i></a></li>
+             </ul>
 
-        </nav>
-    </div>
+         </nav>
+     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
