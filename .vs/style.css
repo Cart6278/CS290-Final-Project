@@ -162,11 +162,6 @@ form {
 }
 
 
-[data-component="slideshow"] .slide {
-    display: none;
-    text-align: center;
+.footer {
+    background-color: #000;
 }
-
-    [data-component="slideshow"] .slide.active {
-        display: block;
-    }
