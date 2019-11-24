@@ -88,47 +88,18 @@ ul li ul {
     }
 /*slider*/
 
-.theSlide{
-    max-width:100%;
-    position: relative;
-    margin: auto;
-}
-.mainSlider{
-    display: none;
-}
-.slideFade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes slideFade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes slideFade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
 /*scrolling page section*/
 .scroll {
     margin: 1rem;
-    width: 450px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     overflow-y: scroll;
-    background-color: white;
+    background-color: #969494;
+    color: #fff;
+    padding: 1rem;
+}
+.scroll>h1{
+    color: #000;
 }
 
 .backDrop {
@@ -139,14 +110,33 @@ ul li ul {
     display: flex;
 }
 
-.center, .photos {
+.center {
     margin: auto;
     padding: 1rem;
-    width: 90%;
+    width: 95%;
+    background-color: #000;
 }
 
-.center{
-    background-color: #000;
+.vanBlurb {
+    color: #fff;
+    margin: auto;
+    padding: 1rem;
+    width: 95%;
+    background-color: #837b7b;
+}
+.photos{
+    margin: auto;
+    padding: 2rem;
+    width:100%;
+}
+.photos>img{
+    padding:.5rem;
+}
+.misc{
+    width: 95%;
+}
+.misc>img{
+    margin: 3rem;
 }
 
 .left {
@@ -154,12 +144,26 @@ ul li ul {
     padding: 1rem;
 }
 .right {
-    flex: 1;
     padding: 1rem;
+    flex: 1 auto;
+}
+
+#formContain {
 
 }
 
 form {
-    width: 50%;
+    width: 100%;
     margin: auto;
+    color: #fff;
 }
+
+
+[data-component="slideshow"] .slide {
+    display: none;
+    text-align: center;
+}
+
+    [data-component="slideshow"] .slide.active {
+        display: block;
+    }

@@ -40,6 +40,7 @@
     <div class="container">
         <div class="backDrop">
             <div class="scroll">
+                <h1>Hello!</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque aliquam vestibulum morbi. Malesuada fames ac turpis egestas. Felis eget nunc lobortis mattis aliquam faucibus. Sem fringilla ut morbi tincidunt augue interdum. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Lacus vestibulum sed arcu non odio euismod lacinia. Malesuada fames ac turpis egestas maecenas pharetra convallis. Cursus euismod quis viverra nibh. Purus viverra accumsan in nisl nisi scelerisque. Netus et malesuada fames ac turpis. Penatibus et magnis dis parturient montes nascetur. Risus at ultrices mi tempus imperdiet.
                 </p>
@@ -52,29 +53,32 @@
             </div>
             <div class="photos">
 
-                <a data-flickr-embed="true" href="https://www.flickr.com/photos/150400063@N04/38593232410/in/datetaken-public/" title="Granville_6"><img src="https://live.staticflickr.com/4616/38593232410_2e770d8607.jpg" width="483" height="500" alt="Granville_6"></a>
-                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
+                <img src="https://live.staticflickr.com/4616/38593232410_2e770d8607.jpg" width="483" height="500" alt="Granville_6">
+             
             </div>
-            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
-                <fieldset>
-                    <h2>Contact Me</h2>
+            <br />
+            <div id="formContain">
+                <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
                     <fieldset>
-                        <label>
-                            Your Name:
-                            <input type="text" name="name_input" size="30" maxlength="100" />
-                        </label>
+                        <h2>Contact Me</h2>
+                        <fieldset>
+                            <label>
+                                Your Name:
+                                <input type="text" name="name_input" size="30" maxlength="100" />
+                            </label>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <label>
+                                Prefered Email:
+                                <input type="email" name="email_input" size="20" maxlength="100" />
+                            </label>
+                        </fieldset>
+                        <br />
                     </fieldset>
-                    <br />
-                    <fieldset>
-                        <label>
-                            Prefered Email:
-                            <input type="email" name="email_input" size="20" maxlength="100" />
-                        </label>
-                    </fieldset>
-                    <br />
-                </fieldset>
-            </form>
+                </form>
+            </div>
+            
         </div>
 
     </div>
