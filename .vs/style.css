@@ -7,7 +7,20 @@ body {
     margin: 0 auto;
     font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
 
+/*Adapted from https://startbootstrap.com/snippets/full-slider/ which is litterally how I finally got it running!*/
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 a {
     text-decoration: none;
@@ -75,17 +88,7 @@ ul li ul {
         width: 100%;
     }
     */
-#welcome {
-    margin: auto;
-    z-index: 500;
-}
 
-    #welcome > h1 {
-        margin: auto;
-        font-size: 18rem;
-        color: #ffffff;
-        text-align: left;
-    }
 /*slider*/
 
 /*scrolling page section*/
